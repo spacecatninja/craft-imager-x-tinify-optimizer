@@ -1,0 +1,44 @@
+{
+    "name": "spacecatninja/imager-x-tinify-optimizer",
+    "description": "Tinify optimizer for Imager X",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "imager-x",
+        "optimizer",
+        "tinify"
+    ],
+    "support": {
+        "docs": "https://github.com/spacecatninja/craft-imager-x-tinify-optimizer/blob/main/README.md",
+        "issues": "https://github.com/spacecatninja/craft-imager-x-tinify-optimizer/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Elvan",
+            "homepage": "https://www.vaersaagod.no/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^5.0.0",
+        "spacecatninja/imager-x": "^6.0.0-beta",
+        "tinify/tinify": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "spacecatninja\\imagerxtinifyoptimizer\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Imager X Tinify Optimizer",
+        "handle": "imager-x-tinify-optimizer",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/spacecatninja/craft-imager-x-tinify-optimizer/main/CHANGELOG.md",
+        "class": "spacecatninja\\imagerxtinifyoptimizer\\ImagerXTinifyOptimizer"
+    }
+}

@@ -8,9 +8,9 @@
 
 namespace SpaceCatNinja\ImagerXTinifyOptimizer\Optimizers;
 
-use Craft;
-use craft\helpers\App;
-use spacecatninja\imagerx\optimizers\ImagerOptimizeInterface;
+use CraftCms\Cms\Support\Env;
+use Illuminate\Support\Facades\Log;
+use SpaceCatNinja\ImagerX\Optimizers\ImagerOptimizeInterface;
 use Tinify\Exception;
 use function Tinify\fromFile;
 use function Tinify\setKey;
@@ -21,11 +21,11 @@ class TinifyOptimizer implements ImagerOptimizeInterface
     public static function optimize(string $file, ?array $settings): void
     {
         try {
-            setKey(App::parseEnv($settings['apiKey']));
+            setKey(Env::parse($settings['apiKey']));
             validate();
             fromFile($file)->toFile($file);
         } catch (Exception) {
-            Craft::error('Could not validate connection to TinyPNG, image was not optimized.', __METHOD__);
+            Log::error('Could not validate connection to TinyPNG, image was not optimized.');
         }
     }
 }

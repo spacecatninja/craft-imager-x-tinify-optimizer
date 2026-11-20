@@ -24,8 +24,9 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^5.0.0",
-        "spacecatninja/imager-x": "^6.0.0-beta",
+        "php": "^8.5",
+        "craftcms/cms": "^6.0.0-alpha",
+        "spacecatninja/imager-x": "^7.0.0-beta.2",
         "tinify/tinify": "^1.0"
     },
     "autoload": {
@@ -37,7 +38,6 @@
         "name": "Imager X Tinify Optimizer",
         "handle": "imager-x-tinify-optimizer",
         "hasCpSettings": false,
-        "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/spacecatninja/craft-imager-x-tinify-optimizer/main/CHANGELOG.md",
         "class": "SpaceCatNinja\\ImagerXTinifyOptimizer\\ImagerXTinifyOptimizer"
     }

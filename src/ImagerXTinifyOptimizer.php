@@ -8,9 +8,9 @@
 
 namespace SpaceCatNinja\ImagerXTinifyOptimizer;
 
-use craft\base\Plugin;
+use CraftCms\Cms\Plugin\Plugin;
+use SpaceCatNinja\ImagerX\Optimizers\Optimizers;
 use SpaceCatNinja\ImagerXTinifyOptimizer\Optimizers\TinifyOptimizer;
-use yii\base\Event;
 
 /**
  * @author    SpaceCatNinja
@@ -20,15 +20,9 @@ use yii\base\Event;
  */
 class ImagerXTinifyOptimizer extends Plugin
 {
-    public function init(): void
+    public function boot(Optimizers $optimizers): void
     {
-        parent::init();
-
-        Event::on(\spacecatninja\imagerx\ImagerX::class,
-            \spacecatninja\imagerx\ImagerX::EVENT_REGISTER_OPTIMIZERS,
-            static function(\spacecatninja\imagerx\events\RegisterOptimizersEvent $event) {
-                $event->optimizers['tinify'] = TinifyOptimizer::class;
-            }
-        );
+        // Register optimizer in Imager X
+        $optimizers->register('tinify', TinifyOptimizer::class);
     }
 }

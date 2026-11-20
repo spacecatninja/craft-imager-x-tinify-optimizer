@@ -2,7 +2,7 @@
     "name": "spacecatninja/imager-x-tinify-optimizer",
     "description": "Tinify optimizer for Imager X",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "2.0.0-beta.1",
     "keywords": [
         "craft",
         "cms",

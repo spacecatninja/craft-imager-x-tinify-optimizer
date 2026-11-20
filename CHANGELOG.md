@@ -1,6 +1,6 @@
 # Tinify Optimizer for Imager X
 
-## 2.0.0 - Unreleased
+## 2.0.0-beta.1 - 2026-11-20
 
 > [!IMPORTANT]
 > Version 2 requires Craft CMS 6, Imager X 7 and PHP 8.5, and there are breaking changes for code that uses the plugin's classes. See [UPGRADE.md](UPGRADE.md).

@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2026 André Elvan
  */
 
-namespace spacecatninja\imagerxtinifyoptimizer\optimizers;
+namespace SpaceCatNinja\ImagerXTinifyOptimizer\Optimizers;
 
 use Craft;
 use craft\helpers\App;

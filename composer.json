@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-          "spacecatninja\\imagerxtinifyoptimizer\\": "src/"
+            "SpaceCatNinja\\ImagerXTinifyOptimizer\\": "src/"
         }
     },
     "extra": {
@@ -39,6 +39,6 @@
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/spacecatninja/craft-imager-x-tinify-optimizer/main/CHANGELOG.md",
-        "class": "spacecatninja\\imagerxtinifyoptimizer\\ImagerXTinifyOptimizer"
+        "class": "SpaceCatNinja\\ImagerXTinifyOptimizer\\ImagerXTinifyOptimizer"
     }
 }

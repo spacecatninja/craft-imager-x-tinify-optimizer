@@ -6,10 +6,10 @@
  * @copyright Copyright (c) 2026 André Elvan
  */
 
-namespace spacecatninja\imagerxtinifyoptimizer;
+namespace SpaceCatNinja\ImagerXTinifyOptimizer;
 
 use craft\base\Plugin;
-use spacecatninja\imagerxtinifyoptimizer\optimizers\TinifyOptimizer;
+use SpaceCatNinja\ImagerXTinifyOptimizer\Optimizers\TinifyOptimizer;
 use yii\base\Event;
 
 /**

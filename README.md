@@ -4,19 +4,22 @@ An optimizer plugin for [Imager X](https://plugins.craftcms.com/imager-x) that c
 
 ## Requirements
 
-- Craft CMS 5.0.0 or later
-- Imager X 6.0.0 or later
+- Craft CMS 6.0.0 or later
+- Imager X 7.0.0-beta.2 or later
+- PHP 8.5 or later
+
+Version 1.x of this plugin supports Craft CMS 5 and Imager X 6. See [UPGRADE.md](UPGRADE.md) when moving to Craft 6.
 
 ## Installation
 
 ```bash
 composer require spacecatninja/imager-x-tinify-optimizer
-php craft plugin/install imager-x-tinify-optimizer
+php artisan craft:plugin:install imager-x-tinify-optimizer
 ```
 
 ## Configuration
 
-Add `tinify` to the `optimizers` array and configure it in `optimizerConfig` in your `config/imager-x.php`:
+Add `tinify` to the `optimizers` array and configure it in `optimizerConfig` in your `config/craft/imager-x.php`:
 
 ```php
 'optimizers' => ['tinify'],

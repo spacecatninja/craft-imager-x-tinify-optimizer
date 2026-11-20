@@ -24,8 +24,8 @@ class TinifyOptimizer implements ImagerOptimizeInterface
             setKey(Env::parse($settings['apiKey']));
             validate();
             fromFile($file)->toFile($file);
-        } catch (Exception) {
-            Log::error('Could not validate connection to TinyPNG, image was not optimized.');
+        } catch (Exception $exception) {
+            Log::error('Could not optimize image with Tinify: '.$exception->getMessage());
         }
     }
 }
